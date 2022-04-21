@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-primary {
+  @apply bg-emerald-500 rounded-lg shadow-lg text-center text-white transition-all duration-100 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-emerald-600 select-none;
+}
+
+.btn-secondary {
+  @apply bg-blue-500 rounded-lg shadow-lg text-center text-white transition-all duration-100 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-blue-600 select-none;
+}
+
+.btn-error {
+  @apply bg-rose-500 rounded-lg shadow-lg text-center text-white transition-all duration-100 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-red-600 select-none;
+}
+
+.no-highlight {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-spin::-webkit-inner-spin-button,
+.no-spin::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -kht: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.colors {
+  @apply bg-rose-500 text-rose-500;
+}
+
+input:disabled {
+  background-color: unset;
+}
+
+body {
+  font-family: Mikhak, Helvetica, Arial;
+}
+
+* {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
